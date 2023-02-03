@@ -61,9 +61,12 @@ nav > a {
     padding: 1px;
 }
 .button{
+    width: 128px;
+    height: 48px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    padding: 16px 40px;
     background: #EC994B;
     border-radius: 41px;
     /*Text*/
@@ -72,7 +75,6 @@ nav > a {
 }
 .secondary_button{
     background: none;
-    padding: 16px 30px;
     color: #EC994B;
     border: 1px solid #EC994B;  
 }
@@ -82,4 +84,10 @@ h1{
     line-height: 120%;
     margin-top: 100px;
     margin-bottom: 25px;
+}
+p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #797979;
 }
