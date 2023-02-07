@@ -124,7 +124,7 @@ p{
 main{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 100%;
 }
 #section1_left{
@@ -134,13 +134,14 @@ main{
     display: flex;
     flex-direction: row;
     gap: 40px;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 #custom_review{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 45px;
+    margin-left: 15px;
     gap: 50px;
 }
 #custom_review p{
@@ -173,12 +174,18 @@ main{
     color: #9C9C9C;
 }
 #section1_right{
+    width: 30%;
+    min-width: 372px;
+    margin-top: 60px;
     border-radius: 200px 200px 0px 0px;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     background-color: #EC994B;
 }
 #section1_right img{
-    width: 720px;
+    min-width: 700px;
+    width: 280%;
     height: auto;
+    margin-left: -100px;
 }
