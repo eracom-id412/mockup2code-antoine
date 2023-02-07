@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
 
 *{
@@ -8,6 +8,14 @@ text-decoration: none;
 font-family: 'Montserrat', sans-serif;
 letter-spacing: 0.01em;
 line-height: 100%;
+}
+p{
+    margin: 0px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 body{
     margin: 0px 100px 0px 100px;
@@ -31,9 +39,27 @@ nav{
     display: flex;
     gap: 45px;
 }
+.line_nav{
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    width: 60px;
+    height: 0px;
+    margin-bottom: -10px;
+    border: 1px solid #EC994B;
+    border-radius: 10px;
+}
 nav > a {
     color: #222224;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;    
+}
+nav > a:hover > .line_nav{
+    display: block;
 }
 #shopping_bag{
     display: flex;
@@ -61,8 +87,8 @@ nav > a {
     padding: 1px;
 }
 .button{
-    width: 128px;
     height: 48px;
+    padding: 0px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +98,10 @@ nav > a {
     /*Text*/
     font-family: 'Poppins';
     color: #FFFFFF;
+    gap: 10px;
+}
+#login-button-text{
+    margin: 0px 10px;
 }
 .secondary_button{
     background: none;
@@ -90,4 +120,65 @@ p{
     font-size: 20px;
     line-height: 130%;
     color: #797979;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+}
+#section1_left{
+    max-width: 535px;
+}
+#main_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 15px;
+}
+#custom_review{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+    gap: 50px;
+}
+#custom_review p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #222224;
+}
+#profile_picks{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+#profile_picks > * {
+    margin: 0px -15px;
+}
+#review_note{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+#review_note p:first-child{
+    font-size: 14px;
+    font-weight: 400;
+}
+#review_note p:last-child{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    color: #9C9C9C;
+}
+#section1_right{
+    border-radius: 200px 200px 0px 0px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #EC994B;
+}
+#section1_right img{
+    width: 720px;
+    height: auto;
 }
