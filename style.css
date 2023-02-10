@@ -121,13 +121,13 @@ p{
     line-height: 130%;
     color: #797979;
 }
-main{
+.section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 100%;
 }
-#section1_left{
+.section_text{
     max-width: 535px;
 }
 #main_buttons{
@@ -136,7 +136,7 @@ main{
     gap: 40px;
     margin-top: 35px;
 }
-#custom_review{
+.review{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -144,17 +144,17 @@ main{
     margin-left: 15px;
     gap: 50px;
 }
-#custom_review p{
+.review p{
     font-family: 'Poppins';
     font-size: 16px;
     color: #222224;
 }
-#profile_picks{
+.profile_picks{
     display: flex;
     flex-direction: row;
     height: 80px;
 }
-#profile_picks > * {
+.profile_picks > * {
     margin: 0px -15px;
 }
 #review_note{
@@ -173,19 +173,33 @@ main{
     font-size: 10px;
     color: #9C9C9C;
 }
-#section1_right{
+.section_image{
     width: 30%;
     min-width: 372px;
-    margin-top: 60px;
-    border-radius: 200px 200px 0px 0px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     background-color: #EC994B;
 }
-#section1_right img{
+.section_image:last-child{
+    border-radius: 200px 200px 0px 0px;
+    margin-top: 60px;
+}
+.section_image:first-child{
+    border-radius: 16px;
+}
+.section_image img{
     min-width: 700px;
     width: 280%;
     height: auto;
     margin-left: -100px;
+}
+.section_image:first-child img{
+    min-width: 300px;
+    width: 180%;   
+    height: auto;
+    margin-left: -100px;
+}
+#section2{
+    margin-top: 100px;
 }
