@@ -9,6 +9,7 @@ font-family: 'Montserrat', sans-serif;
 letter-spacing: 0.01em;
 line-height: 100%;
 }
+/*Global*/
 p{
     margin: 0px;
 }
@@ -20,6 +21,7 @@ p{
 body{
     margin: 0px 100px 0px 100px;
 }
+/*Navigation*/
 .top_nav{
     display: flex;
     flex-direction: row;
@@ -108,6 +110,7 @@ nav > a:hover > .line_nav{
     color: #EC994B;
     border: 1px solid #EC994B;  
 }
+/*Title*/
 h1{
     font-weight: 700;
     font-size: 64px;
@@ -121,6 +124,7 @@ p{
     line-height: 130%;
     color: #797979;
 }
+
 .section{
     display: flex;
     flex-direction: row;
