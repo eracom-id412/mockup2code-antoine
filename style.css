@@ -38,6 +38,9 @@ body{
     max-width: 100%;
     align-items: center;
 }
+section > *{
+    margin: 30px;
+}
 .section_text{
     display: flex;
     flex-direction: column;
@@ -175,6 +178,15 @@ p{
     border-radius: 200px 200px 0px 0px;
     /*margin-top: 60px;*/
 }
+#image-character-2{
+    border-radius: 16px;
+}
+#image-character-1 .main-image{
+    width: 50rem;
+}
+#image-character-2 .main-image{
+    width: 28rem;
+}
 #Icon-Images{
     position: absolute;
     display: flex;
@@ -222,20 +234,6 @@ p{
     /*icon Comment*/
     right: -300px;
     width: 350px;
-}
-#image-character-2{
-    border-radius: 16px;
-}
-#image-character-1 .main-image{
-    min-width: 700px;
-    width: 280%;
-    height: auto;
-    margin-left: -100px;
-}
-#image-character-2 .main-image{
-    min-width: 200px;
-    max-height: 110%;
-    height: auto;
 }
 /*Review*/
 .review{
@@ -321,11 +319,14 @@ p{
 }
 /*Footer*/
 footer{
-    display: flex;
     bottom: 0px;
+    background-color: #222224;
+}
+#footer-content{
+    display: flex;
     justify-content: flex-start;
     height: auto;
-    background-color: #222224;
+
     padding: 5%;
     gap: 15%;
 }
@@ -378,6 +379,15 @@ footer{
 .nav-menu p{
     font-weight: 200;
     font-size: 16px;
+}
+#legal-mentions p{
+    bottom: 0px;
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: center;
 }
 @media screen and (max-width: 800px){
 
