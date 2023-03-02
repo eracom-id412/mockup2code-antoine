@@ -326,7 +326,7 @@ footer{
     justify-content: flex-start;
     height: auto;
     background-color: #222224;
-    padding: 100px;
+    padding: 5%;
     gap: 15%;
 }
 #footer-links{
@@ -366,6 +366,11 @@ footer{
     flex-direction: column;
     gap: 20px;
     color: #E2E2E2;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+}
+.nav-menu h2{
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
