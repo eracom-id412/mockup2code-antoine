@@ -12,11 +12,11 @@ transition: 200ms;
 transition-timing-function: ease-out;
 }
 h1,h2,h3,h4,h5,h6{
-    margin: 0px;
+    margin: 0;
 }
 /*Global*/
 p{
-    margin: 0px;
+    margin: 0;
 }
 .flex{
     display: flex;
@@ -58,7 +58,7 @@ a:hover {
     justify-content: space-around;
     gap: 30px;
 }
-#logo{
+.logo{
     font-weight: 700;
     font-size: 24px;
     color: #EC994B;
@@ -72,7 +72,7 @@ nav{
     display: none;
     position: absolute;
     width: 60px;
-    height: 0px;
+    height: 0;
     margin-bottom: -10px;
     border: 1px solid #EC994B;
     border-radius: 10px;
@@ -145,7 +145,7 @@ nav > a:hover > .line_nav{
     gap: 40px;
 }
 /*Title*/
-h1{
+h2{
     font-weight: 700;
     font-size: 4rem;
     line-height: 120%;
@@ -338,7 +338,7 @@ footer{
     display: grid;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: auto auto;
+    grid-row: auto;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
