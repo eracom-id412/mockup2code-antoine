@@ -175,13 +175,12 @@ p{
 }
 #image-character-1{
     border-radius: 200px 200px 0px 0px;
-    /*margin-top: 60px;*/
 }
 #image-character-2{
     border-radius: 16px;
 }
 #image-character-1 .main-image{
-    width: 50rem;
+    width: 45rem;
 }
 #image-character-2 .main-image{
     width: 28rem;
@@ -388,13 +387,50 @@ footer{
     font-weight: 200;
     justify-content: center;
 }
+@media (max-width: 1600px){
+    #image-character-1 .main-image{
+        width: 40rem;
+    }
+    #image-character-2 .main-image{
+        width: 25rem;
+    }
+    #Icon-Images{
+        transform: scale(90%);
+    }
+}
 @media screen and (max-width: 800px){
 
 .section{
     justify-content: flex-end;
     flex-direction: column-reverse;
 }
+nav{
+    display: none;
+}
+#image-character-1 .main-image{
+    width: 35rem;
+}
+#image-character-2 .main-image{
+    width: 23rem;
+}
+#Icon-Images{
+    transform: scale(75%);
+}
 #footer{
     flex-direction: column;
+}
+#footer-content{
+    flex-direction: column;    
+}
+#footer-nav{
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+#footer-links{
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
 }
 }
