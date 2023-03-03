@@ -29,6 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 150px;
+    overflow-x: hidden;
 }
 .section{
     display: flex;
@@ -130,6 +131,7 @@ nav > a:hover > .line_nav{
     font-family: 'Poppins';
     color: #FFFFFF;
     gap: 10px;
+    white-space: nowrap;
 }
 #login-button-text{
     margin: 0px 10px;
@@ -147,7 +149,7 @@ nav > a:hover > .line_nav{
 /*Title*/
 h2{
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 64px;
     line-height: 120%;
 }
 h6{
@@ -180,10 +182,11 @@ p{
     border-radius: 16px;
 }
 #image-character-1 .main-image{
-    width: 45rem;
+    width: 600px;
+    margin-right: 100px;
 }
 #image-character-2 .main-image{
-    width: 28rem;
+    width: 350px;
 }
 #Icon-Images{
     position: absolute;
@@ -230,7 +233,7 @@ p{
 }
 #Icon-Images img:nth-child(6){
     /*icon Comment*/
-    right: -300px;
+    right: -190px;
     width: 350px;
 }
 /*Review*/
@@ -387,15 +390,18 @@ footer{
     font-weight: 200;
     justify-content: center;
 }
-@media (max-width: 1600px){
+@media (max-width: 1200px){
+    h2{
+        font-size: 56px;
+    }
     #image-character-1 .main-image{
-        width: 40rem;
+        width: 500px;
     }
     #image-character-2 .main-image{
-        width: 25rem;
+        width: 300px;
     }
-    #Icon-Images{
-        transform: scale(90%);
+    .section_text{
+        width: 35%;
     }
 }
 @media screen and (max-width: 800px){
@@ -403,6 +409,10 @@ footer{
 .section{
     justify-content: flex-end;
     flex-direction: column-reverse;
+    gap: 60px;
+}
+.section_text{
+    width: 100%;
 }
 nav{
     display: none;
@@ -416,6 +426,12 @@ nav{
 #Icon-Images{
     transform: scale(75%);
 }
+.carousel-arrow-box{
+    
+}
+.carousel-arrow{
+    position: absolute;
+    }
 #footer{
     flex-direction: column;
 }
