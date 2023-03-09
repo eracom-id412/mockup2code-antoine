@@ -45,7 +45,13 @@ section > *{
     display: flex;
     flex-direction: column;
     max-width: 535px;
+    min-width: none;
     gap: 30px;
+    z-index: 10;
+}
+#first-section-text{
+    max-width: 100%;
+    min-width: fit-content;
 }
 a:hover {
     /*scale animation on links*/
@@ -149,7 +155,8 @@ nav > a:hover > .line_nav{
 /*Title*/
 h2{
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4.4vw;
+    min-width: 50px;
     line-height: 120%;
 }
 h6{
@@ -391,17 +398,11 @@ footer{
     justify-content: center;
 }
 @media (max-width: 1200px){
-    h2{
-        font-size: 56px;
-    }
     #image-character-1 .main-image{
         width: 500px;
     }
     #image-character-2 .main-image{
         width: 300px;
-    }
-    .section_text{
-        width: 35%;
     }
 }
 @media screen and (max-width: 800px){
@@ -425,9 +426,6 @@ nav{
 }
 #Icon-Images{
     transform: scale(75%);
-}
-.carousel-arrow-box{
-    
 }
 .carousel-arrow{
     position: absolute;
