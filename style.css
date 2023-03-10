@@ -34,8 +34,9 @@ body{
 .section{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    max-width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 90vw;
     align-items: center;
 }
 section > *{
@@ -62,8 +63,13 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
+}
+.parent-nav{
+    width: 90vw;
+    margin: auto;
+    justify-content: space-between;
 }
 .logo{
     font-weight: 700;
@@ -406,7 +412,9 @@ footer{
     }
 }
 @media screen and (max-width: 800px){
-
+h2{
+    font-size: 8vw;
+}
 .section{
     justify-content: flex-end;
     flex-direction: column-reverse;
@@ -414,6 +422,11 @@ footer{
 }
 .section_text{
     width: 100%;
+    align-items: center;
+}
+.section_text > *{
+    align-items: center;
+    max-width: 100%;
 }
 nav{
     display: none;
